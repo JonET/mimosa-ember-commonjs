@@ -1,8 +1,8 @@
 {
-  "name": "mimosa-browserify-example",
+  "name": "mimosa-ember-commonjs",
   "version": "0.0.1",
   "author": "Jon Taylor",
-  "description": "Mimosa default project reworked for browserify.",
+  "description": "Boilerplate application for using Mimosa and Ember with mimosa-browserify.",
   "dependencies": {
     "express": "3.3.4",
     "coffee-script": "1.6.3",
