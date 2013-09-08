@@ -1,0 +1,13 @@
+{
+  "name": "mimosa-browserify-example",
+  "version": "0.0.1",
+  "author": "Jon Taylor",
+  "description": "Mimosa default project reworked for browserify.",
+  "dependencies": {
+    "express": "3.3.4",
+    "coffee-script": "1.6.3",
+    "consolidate": "0.9.1",
+    "jade": "0.34.1",
+    "handlebars": "1.0.12"
+  }
+}
