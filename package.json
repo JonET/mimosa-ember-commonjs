@@ -1,7 +1,7 @@
 {
   "name": "mimosa-ember-commonjs",
   "version": "0.0.1",
-  "author": "Jon Taylor",
+  "author": "Your Name Here",
   "description": "Boilerplate application for using Mimosa and Ember with mimosa-browserify.",
   "dependencies": {
     "express": "3.3.4",
