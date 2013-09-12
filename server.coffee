@@ -27,6 +27,7 @@ exports.startServer = (config, callback) ->
     app.use express.errorHandler()
 
   app.get '/', routes.index(config)
+  app.get '/issues', routes.issues()
 
   callback(server)
 

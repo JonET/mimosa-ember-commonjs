@@ -23,6 +23,8 @@ exports.config =
         depends:
           handlebars: 'Handlebars'
           jquery: '$'
+    aliases:
+      moment: 'javascripts/vendor/momentjs/moment'
     noParse:
       [
         'javascripts/vendor/jquery/jquery'

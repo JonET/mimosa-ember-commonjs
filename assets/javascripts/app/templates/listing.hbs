@@ -1,0 +1,35 @@
+<section id="listing">
+  <table id="forums" class="table table-striped">
+    <thead>
+      <th>Name</th>
+      <th>Comments</th>
+      <th>Updated</th>
+    <thead>
+    <tbody>
+      {{#each}}
+      <tr>
+        <td>{{title}}</td>
+        <td>{{comments}}</td>
+        <td>{{date updated_at}}</td>
+
+      </tr>
+      {{/each}}
+
+{{!--       <tr>
+        <td>General Nonsense</td>
+        <td>10</td>
+        <td>A month ago</td>
+      </tr>
+      <tr>
+        <td>Goldmine</td>
+        <td>10</td>
+        <td>A month ago</td>
+      </tr>
+      <tr>
+        <td>Landfill</td>
+        <td>10</td>
+        <td>A month ago</td>
+      </tr> --}}
+    </tbody>
+  </table>
+</section>
