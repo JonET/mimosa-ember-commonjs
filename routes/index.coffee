@@ -1,4 +1,6 @@
-index = (config) ->
+https = require 'https'
+
+exports.index = (config) ->
 
   options =
     reload:    config.liveReload.enabled
@@ -10,8 +12,22 @@ index = (config) ->
   name = if config.isOptimize and config.server.views.html
     "index-optimize"
   else
-    "index"
+    "layout"
 
   (req, res) -> res.render name, options
 
-exports.index = index
+exports.issues = ->
+  issues = null
+  (req, res) ->
+    res.set 'Content-Type', 'application/json'
+
+    return res.send(issues) if issues?
+
+    url = 'https://api.github.com/repos/dbashford/mimosa/issues'
+    https.get url, (issuesRes) ->
+      body = ''
+      issuesRes.on 'data', (d) ->
+        body += d
+      issuesRes.on 'end', ->
+        issues = body
+        res.send issues
