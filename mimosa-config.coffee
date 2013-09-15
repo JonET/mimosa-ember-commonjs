@@ -25,6 +25,7 @@ exports.config =
           jquery: '$'
     aliases:
       moment: 'javascripts/vendor/momentjs/moment'
+      lodash: 'javascripts/vendor/lodash'
     noParse:
       [
         'javascripts/vendor/jquery/jquery'

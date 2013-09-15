@@ -1,4 +1,5 @@
 <section id="listing">
+  {{outlet}}
   <table id="forums" class="table table-striped">
     <thead>
       <th>Name</th>
@@ -8,13 +9,12 @@
     <tbody>
       {{#each}}
       <tr>
-        <td>{{title}}</td>
+        <td>{{#link-to 'issue' number}}{{title}}{{/link-to}}</td>
         <td>{{comments}}</td>
         <td>{{date updated_at}}</td>
 
       </tr>
       {{/each}}
-
 {{!--       <tr>
         <td>General Nonsense</td>
         <td>10</td>
