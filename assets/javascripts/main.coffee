@@ -4,6 +4,7 @@ Templates   = require './templates'
 _           = require 'lodash'
 Issues      = require './app/models/issues'
 require './app/helpers/date'
+require './app/helpers/markdown'
 
 App = Ember.Application.create()
 
