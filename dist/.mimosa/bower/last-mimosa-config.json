@@ -1,0 +1,21 @@
+{
+  "watch": true,
+  "bowerDir": {
+    "path": ".mimosa/bower/bower_components",
+    "clean": true,
+    "pathFull": ""
+  },
+  "copy": {
+    "enabled": true,
+    "trackChanges": true,
+    "outRoot": "",
+    "defaultStrategy": "packageRoot",
+    "strategy": {},
+    "forceLatest": true,
+    "exclude": [],
+    "overridesArrays": {},
+    "overridesObjects": {},
+    "mainOverrides": {},
+    "pathMod": null
+  }
+}

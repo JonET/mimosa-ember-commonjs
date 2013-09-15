@@ -1,5 +1,5 @@
 exports.config =
-  modules: ["server","browserify","lint","live-reload","bower"]
+  modules: ["server","browserify","lint","live-reload","bower","minify","web-package"]
   template:
     wrapType: 'common'
     commonLibPath: 'ember'
