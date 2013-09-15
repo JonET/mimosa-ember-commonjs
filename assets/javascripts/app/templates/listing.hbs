@@ -2,6 +2,7 @@
   {{outlet}}
   <table id="forums" class="table table-striped">
     <thead>
+      <th>
       <th>Name</th>
       <th>Comments</th>
       <th>Updated</th>
@@ -9,6 +10,7 @@
     <tbody>
       {{#each}}
       <tr>
+        <td><img {{bind-attr src=user.avatar_url title=user.login}} width="25" height="25"></td>
         <td>{{#link-to 'issue' number}}{{title}}{{/link-to}}</td>
         <td>{{comments}}</td>
         <td>{{date updated_at}}</td>

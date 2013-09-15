@@ -12,4 +12,4 @@ Issues = Ember.Object.extend
         @set 'issues', issues
         issues
 
-module.exports = Issues
+module.exports = Issues.create()
