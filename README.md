@@ -1,7 +1,9 @@
 mimosa-ember-commonjs
 =========================
 
-A simple project to demonstrate how to set up Ember with mimosa-browserify. 
+A simple project to demonstrate how to set up Ember with mimosa-browserify.
+
+[Demo Here](http://mimosa-ember-commonjs.herokuapp.com/)
 
 Highlights:
 * Setting up Ember and Handlebars
