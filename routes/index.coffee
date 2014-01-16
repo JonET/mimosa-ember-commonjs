@@ -1,4 +1,5 @@
 https = require 'https'
+url = require 'url'
 
 exports.index = (config) ->
 
@@ -23,8 +24,10 @@ exports.issues = ->
 
     return res.send(issues) if issues?
 
-    url = 'https://api.github.com/repos/dbashford/mimosa/issues'
-    https.get url, (issuesRes) ->
+    opts = url.parse 'https://api.github.com/repos/dbashford/mimosa/issues'
+    opts.headers = 'User-Agent' : 'testBrowserify'
+
+    https.get opts, (issuesRes) ->
       body = ''
       issuesRes.on 'data', (d) ->
         body += d
