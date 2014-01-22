@@ -1,9 +1,20 @@
 exports.config =
-  modules: ["server","browserify","lint","live-reload","bower","minify"]
+  modules: [
+    "server"
+    "browserify"
+    "csslint"
+    "jshint"
+    "live-reload"
+    "bower"
+    "minify-js"
+    "minify-css"
+    "coffeescript"
+    "ember-handlebars"
+    "copy"
+    "stylus"]
   template:
     wrapType: 'common'
     commonLibPath: 'ember'
-    handlebars: ember: enabled: true
   browserify:
     bundles:
       [
